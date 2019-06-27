@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <title>W C A G</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Arquivos/CSS/w3.css">
+  <link rel="stylesheet" href="Arquivos/CSS/tema.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Arquivos/CSS/meuEstilo.css">
+<body>
+
+<!-- Menu Navigação -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <!--<h1 class="w3-xxxlarge w3-text-theme">Menu</h1>-->
+    <button class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-remove"></i> Fechar Menu</button>
+    <a href="index.html" class="w3-bar-item w3-button">Principal</a>
+    <a href="historia.html" class="w3-bar-item w3-button">História W3C</a>
+    <a href="ComoFuncionaW3C.html" class="w3-bar-item w3-button">Como funciona a W3C</a>
+    <a href="WCAG.html" class="w3-bar-item w3-button">W C A G</a>
+    <a href="ATAG.html" class="w3-bar-item w3-button">A T A G</a>
+    <a href="UAAG.html" class="w3-bar-item w3-button">U A A G</a>
+    <a href="Linksparaler.html" class="w3-bar-item w3-button">Pra ler</a>
+    
+  </nav>
+
+<!-- Cabeçalho -->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+    <div class="w3-center">
+        <h5>W C A G</h5>
+      <h1 class="w3-xxxlarge w3-animate-bottom">Web Content Accessibility Guideline</h1></br>
+    </div>
+  </header>
+
+  <div class="w3-container w3-margin w3-padding">
+      <p class="meuParagrafo">Principal > WCAG</p> 
+  </div>
+
+  <div class="w3-container minhaClasse">
+    <h2>O que é a WCAG?</h2>
+    <p>É uma diretriz que aponta as melhores práticas de desenvolvimento afim de garantir a acessibilidade
+        e padronização na internet. Elas são desenvolvidas através dos processos da W3C,e 
+        tem como finalidade oferecer um único padrão para entidades,empresas e governos.
+    </p>
+    <p>Atualmente a WCAG está em sua versão 2, sendo a WCAG 2.0 lançada em 2008 e a WCAG 2.1 lançada em 2018.</p>
+    <p> Entretanto a versão 2.1 não substitui a versão 2.0. A W3C apenas <em>recomenda</em> utilizar 
+        a versão mais atualizada da diretriz.
+    </p></br>
+    <p class="enfase">Resumindo: é um conjunto de boas práticas para desenvolvedores garatirem a acessibilidade na internet,
+        através da WAI.
+    </p></br>
+    <h2>O que é a WAI?</h2>
+    <p> Web Accessibility Initiative, é a iniciativa de acessibilidade web onde fornece um conjunto de 
+        ferramentas para o desenvolvimento web. As famosas WAI-ARIA's.</p>
+    <h2>O que é WAI-ARIA?</h2>
+    <p>São meta informações que colocamos nas tag's HTML5 ou XHTML, que permitam que usuários com alguma 
+        dificuldade possa acessar o conteúdo. </br>Para isso, tanto dispositivos quando desenvolvedores deve ter padronizado a forma de escrita e leitura das tag's. 
+        É aqui que entra o trabalho da W3C.
+    </p>
+    <h2>O que há mais nas WAI-ARIAS?</h2>
+    <p>A W3C classificou as wai-arias em ranking que vão de AAA, AA, A para importância das tag's. 
+        Por exemplo, tag's com ranking AAA são de extrema importância e pode afetar muito mais a experiência do usuários
+        e a acessibilidade do aplicativo se não implementadas em relação a tag's A.
+    </p>
+    <p>A W3C também rankeia os sites: de AAA, AA, A, B, C sendo o AAA a melhor graduação, e prêmia os melhores 
+        sites com o <a class="meuLink" href="http://premio.ceweb.br/" target="_blank" rel="noopener noreferrer"> prêmio CEWEB.</a> 
+    </p>
+    <h2>Alguns Exemplos Práticos</h2>
+    <div>
+        <figure>
+            <img src="Arquivos/IMG/exemplo1.png" alt="Exemplo de WAI-ARIA" style="width: 100%">
+        </figure>     
+        <p>A imagem não mostra, mas o próprio HTML5 já é capaz de validar um e-mail sem uso de javascript ou 
+            qualquer outra linguagem de programação. Como? WAI-ARIA!
+            Outro detalhe: a <a class="meuLink" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" 
+            target="_blanck">WCAG 2.1 Uso de cor 1.4.1</a> especifica isso :)  
+        </p></br>
+        <figure>
+            <img src="Arquivos/IMG/exemplo2.png" alt="Exemplo de WAI-ARIA" style="width: 100%">
+        </figure>
+        <p>Nem tudo está nas WAI-ARIAS. Algumas boas práticas estão nas WCGA's 
+            (que são especificações técnicas). Essa por exemplo, voces podem encontrar nas 
+            <a class="meuLink" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target="_blank" rel="noopener noreferrer">WCAG 2.1 Cabeçalhos e Etiquetas 2.4.6</a>
+             e também em 
+            <a class="meuLink" href="https://www.w3.org/WAI/WCAG21/quickref/#section-headings" target="_blank" rel="noopener noreferrer">WCAG 2.1 Títulos da seção 2.4.10</a>        
+        </p>
+        <p>
+            Bom, existe um conteúdo vasto sobre o assunto lá na W3C, de forma gratuita bastando apenas ler e aplica-lo 
+            no dia a dia. 
+        </p>
+        <p class="enfase">
+            Cada especificação segue um norma: 1.X.X, 2.X.X, 3.X.X e 4.X.X </br>
+            Esse valor na frente significa: 1- Perceptível, 2- Operavel, 3- Compreensivel, 4- Robusto.
+            Sim, são os 4 principios básicos da WCAG e suas implementações.
+        </p>
+    </div>
+
+  </div>
+
+</br>
+
+<!-- Footer -->
+  <footer class="w3-container w3-theme-dark w3-padding-16">
+    <h3>Padrões de Conformidade da Web - W3C</h3>
+    <p>Elton André Veiga</p>
+    <p>Trabalho Final de IHC - 2019 &copy;</p>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Ir para o topo</span>    
+      <a class="w3-text-white" href="#myHeader">
+        <span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i>
+        </span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="Arquivos/JS/menu.js"></script>
+</body>
+</html>

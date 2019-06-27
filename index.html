@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <title>Padrões Conformidade Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Arquivos/CSS/w3.css">
+  <link rel="stylesheet" href="Arquivos/CSS/tema.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Arquivos/CSS/meuEstilo.css">
+<body>
+
+<!-- Menu Navigação -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <!--<h1 class="w3-xxxlarge w3-text-theme">Menu</h1>-->
+    <button class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-remove"></i> Fechar Menu</button>
+    <a href="index.html" class="w3-bar-item w3-button">Principal</a>
+    <a href="historia.html" class="w3-bar-item w3-button">História W3C</a>
+    <a href="ComoFuncionaW3C.html" class="w3-bar-item w3-button">Como funciona a W3C</a>
+    <a href="WCAG.html" class="w3-bar-item w3-button">W C A G</a>
+    <a href="ATAG.html" class="w3-bar-item w3-button">A T A G</a>
+    <a href="UAAG.html" class="w3-bar-item w3-button">U A A G</a>
+    <a href="Linksparaler.html" class="w3-bar-item w3-button">Pra ler</a>
+    
+  </nav>
+
+<!-- Cabeçalho -->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+    <div class="w3-center">
+    <h4>W3C - World Wide Web Consortium</h4>
+    <h1 class="w3-xxxlarge w3-animate-bottom">Guia dos Padrões de Conformidade da Web</h1>
+      <div class="w3-padding-32">
+        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+      </div>
+    </div>
+  </header>
+
+<!-- Modal -->
+  <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme-l1"> 
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">×</span>
+          <h4>Sobre este site</h4>
+          <h5>Algumas informações importantes:<i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="w3-padding">
+          <p>Este site usa o Framework W3.CSS da W3School.</p>
+          <p>O trabalho aqui exposto foi desenvolvido para o trabalho não entregue sobre o tema.</p>
+          <p>A página de link's possuem vídeos, artigos e podcast's muito interessante.</p>
+          <p>Mantive os links originais por questões de propriedade intelectual.</p>
+        </div>
+        <footer class="w3-container w3-theme-l1">
+          <p>&copy; 2019</p>
+        </footer>
+      </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:460px">
+        <h3>WCAG</h3><br>
+          <svg class="w3-margin-bottom w3-text-theme" style="width:124px;height:124px" viewBox="0 0 24 24">
+            <path fill="#000000" d="M6,5H18A1,1 0 0,1 19,6A1,1 0 0,1 18,7H6A1,1 0 0,1 5,6A1,1 0 0,1 6,5M21,2V4H3V2H21M15,8H17V22H15V8M7,8H9V22H7V8M11,8H13V22H11V8Z" />
+          </svg>
+        <h6>Web Content Accessibility Guideline</h6><br>  
+        <p>Percetível</p>
+        <p>Operável</p>
+        <p>Compreensível</p>
+        <p>Robusto</p>
+        <p><a class="meuLink" href="WCAG.html">Saiba mais sobre WCAG</a></p>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>ATAG</h3><br>
+        <svg class="w3-margin-bottom w3-text-theme" style="width:124px;height:124px" viewBox="0 0 24 24">
+          <path fill="#000000" d="M6,5H18A1,1 0 0,1 19,6A1,1 0 0,1 18,7H6A1,1 0 0,1 5,6A1,1 0 0,1 6,5M21,2V4H3V2H21M15,8H17V22H15V8M7,8H9V22H7V8M11,8H13V22H11V8Z" />
+        </svg>
+        <h6>Authoring  Tool Accessibility Guideline</h6><br>
+        <p>Sistema de gerenciadores de conteúdo</p>
+        <p>Publicadores de código</p>
+        <p>Softwares em geral</p>
+        <p></br></p>
+        <p><a class="meuLink" href="ATAG.html">Saiba mais sobre ATAG</a></p>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>UAAG</h3><br>
+        <svg class="w3-margin-bottom w3-text-theme" style="width:124px;height:124px" viewBox="0 0 24 24">
+          <path fill="#000000" d="M6,5H18A1,1 0 0,1 19,6A1,1 0 0,1 18,7H6A1,1 0 0,1 5,6A1,1 0 0,1 6,5M21,2V4H3V2H21M15,8H17V22H15V8M7,8H9V22H7V8M11,8H13V22H11V8Z" />
+        </svg>
+        <h6>User  Agent Accessibility Guideline</h6><br>
+        <p>Navegadores</p>
+        <p>Players vídeos</p>
+        <p>Softwares em geral</p>  
+        <p></br></p>
+        <p><a class="meuLink" href="UAAG.html">Saiba mais sobre UAAG</a></p>
+      </div>
+    </div>
+  </div>
+</br>
+
+<!-- Footer -->
+  <footer class="w3-container w3-theme-dark w3-padding-16">
+    <h3>Padrões de Conformidade da Web - W3C</h3>
+    <p>Elton André Veiga</p>
+    <p>Trabalho Final de IHC - 2019 &copy;</p>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Ir para o topo</span>    
+      <a class="w3-text-white" href="#myHeader">
+        <span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i>
+        </span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="Arquivos/JS/menu.js"></script>
+</body>
+</html>
